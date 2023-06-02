@@ -90,8 +90,7 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.header__logo {
-}
+
 .header__menu {
   max-width: 104px;
 }
@@ -103,8 +102,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
-.header__item {
-}
+
 .header__link {
   font-family: Roboto;
   display: block;
@@ -174,8 +172,7 @@ main {
   display: grid;
   gap: 100px;
 }
-.home__main-slider {
-}
+
 @media (max-width: 991.98px) {
   .home__sections {
     gap: 70px;
@@ -231,8 +228,7 @@ main {
   z-index: 2;
   max-height: 600px;
 }
-.main-slider__bg img {
-}
+
 .main-slider__container {
   min-height: 100%;
   max-height: 600px;
@@ -315,8 +311,7 @@ main {
 
   color: #e5e5e5;
 }
-.main-slider__bullets {
-}
+
 .bullets {
   position: relative;
   z-index: 2;
@@ -379,8 +374,7 @@ main {
 .home__topics {
   width: 100%;
 }
-.topics {
-}
+
 .topics__container {
   margin-top: 100px;
 
@@ -431,8 +425,7 @@ main {
 .topics__tabs {
   margin-top: 45px;
 }
-.tabs {
-}
+
 .tabs__all {
   width: 100%;
   height: 100%;
@@ -443,8 +436,7 @@ main {
   column-gap: 20px;
   row-gap: 50px;
 }
-.tabs__card {
-}
+
 .tabs-card {
   display: none;
   flex-direction: column;
@@ -523,13 +515,14 @@ main {
 
 /****************************** BIG POST *********************************/
 
-.home__big-post {
-}
 .big-post {
   position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 100px;
+  @media (max-width: 767.98px) {
+    height: 600px;
+  }
 }
 .big-post__bg {
   position: absolute;
@@ -538,17 +531,14 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
+  background: url("../img/big-post/image.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  @media (max-width: 767.98px) {
+    background-size: 1440px 600px;
+  }
 }
-.big-post__bg img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-.big-post__container {
-}
+
 .big-post__content {
   display: flex;
   flex-direction: column;
@@ -558,6 +548,10 @@ main {
   z-index: 3;
   padding-top: 242px;
   padding-bottom: 242px;
+  @media (max-width: 767.98px) {
+    padding-top: 142px;
+    padding-bottom: 142px;
+  }
 }
 .big-post__category {
   border-radius: 8px;
@@ -608,10 +602,6 @@ main {
 
 /*************************** Related Posts ******************************/
 
-.home__related-posts {
-}
-.related-posts {
-}
 .related-posts__container {
   display: flex;
   flex-direction: column;
@@ -640,8 +630,7 @@ main {
   grid-template-columns: repeat(3, auto);
   column-gap: 20px;
 }
-.related-posts__post {
-}
+
 .post {
   position: relative;
   width: 100%;
@@ -940,8 +929,6 @@ ARTICLE
     margin-bottom: 0px;
   }
 
-  .banner__container {
-  }
   .title {
     max-width: 450px;
   }
